@@ -1,4 +1,4 @@
-module github.com/pandakn/gofiber-crud
+module github.com/pandakn/go-fiber-simple-todo
 
 go 1.20
 

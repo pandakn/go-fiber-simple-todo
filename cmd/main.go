@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/pandakn/gofiber-crud/database"
-	"github.com/pandakn/gofiber-crud/internal/routes"
+	"github.com/pandakn/go-fiber-simple-todo/database"
+	"github.com/pandakn/go-fiber-simple-todo/internal/routes"
 )
 
 func main() {

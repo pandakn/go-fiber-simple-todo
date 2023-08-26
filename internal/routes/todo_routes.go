@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gofiber/fiber/v2"
-	todoHandlers "github.com/pandakn/gofiber-crud/internal/handlers"
+	todoHandlers "github.com/pandakn/go-fiber-simple-todo/internal/handlers"
 )
 
 func SetupTodoRoutes(api fiber.Router) {

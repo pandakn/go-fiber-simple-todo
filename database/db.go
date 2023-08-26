@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/pandakn/gofiber-crud/config"
-	"github.com/pandakn/gofiber-crud/internal/models"
+	"github.com/pandakn/go-fiber-simple-todo/config"
+	"github.com/pandakn/go-fiber-simple-todo/internal/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

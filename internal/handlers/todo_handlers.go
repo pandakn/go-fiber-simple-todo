@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/pandakn/gofiber-crud/database"
-	"github.com/pandakn/gofiber-crud/internal/models"
+	"github.com/pandakn/go-fiber-simple-todo/database"
+	"github.com/pandakn/go-fiber-simple-todo/internal/models"
 )
 
 func GetTodos(c *fiber.Ctx) error {
@@ -44,11 +44,6 @@ func UpdateTodo(c *fiber.Ctx) error {
 	if err := database.DB.Db.First(&todo, id).Error; err != nil {
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": "Todo not found"})
 	}
-
-	// // Update only the Completed field if it's included in the request
-	// if updatedTodo.Completed {
-	// 	todo.Completed = updatedTodo.Completed
-	// }
 
 	database.DB.Db.Model(&todo).Updates(updatedTodo)
 
